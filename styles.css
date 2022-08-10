@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #111827;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: score;
+    src: url("VPPixel-Simplified.otf");
+}
+
+.container {
+    background-color: #9F1239;
+    width: 30%;
+    margin: 7.3em auto;
+    padding: 3em 6em;
+    border-radius: 1em;
+    border: 0.5em solid #F43F5E;
+    text-shadow: 0.15em 0.15em #374151;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+}
+
+.team {
+    width: 50%;
+} 
+
+.team + .team {
+    margin-left: 5em;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Verdana';
+}
+
+.score-card {
+    color: #F43F5E;
+    background-color: #111827;;
+    font-size: 100px;
+    width: 90%;
+    padding: 0.1em;
+    margin: 0.15em auto 0.25em auto;
+    border-radius: 0.2em;
+}
+
+.btns {
+    display: flex;
+    padding: 0em 1em;
+}
+
+.btn {
+    padding: 0.3em 0.4em;
+    font-size: 25px;
+    width: 30%;
+    text-align: center;
+}
+
+.btn + .btn {
+    margin-left: 0.3em;
+}
+
+.btn {
+    background-color: #9F1239;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-family: score;
+}
+
+.new-game-btn {
+    margin-top: 1.5em;
+    width: 40%;
+    font-size: 20px;
+    padding: 0.3em;
+    background-color: #9F1239;
+    border-radius: 0.3em;
+    cursor: pointer;
+    text-shadow: 1px 1px #374151;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 50%;
+        margin: 4em auto;
+    }
+
+    .team + .team {
+        margin-left: 3em;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 0.2em 0.3em;
+        font-size: 18px;
+        width: 55%;
+        text-align: center;
+    }
+
+    .btn + .btn {
+        margin-left: 0.2em;
+    }
+
+    .new-game-btn {
+        width: 90%;
+        margin: 1.5em auto 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+}
